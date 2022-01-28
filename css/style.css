@@ -1,0 +1,84 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #fff;
+	font-size: 25px;
+	min-height: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+.box{
+	display: grid;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header{
+	background: #fff;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	border: 1px solid #000;
+}
+.header .logo{
+	max-width: 300px;
+	height: 60px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding-left: 10px;
+	font-weight: 400;
+	font-size: 1.6rem;
+	overflow: hidden;
+}
+.header .logo-text{
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+.menu{
+	max-height: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	color:orange;
+	margin: 5px 0;
+	padding-left: 10px;
+}
+.menu a{
+	margin-right: 5px;
+	font-size: 1.2rem;
+	color: #000;
+}
+.menu a:hover{
+	color: blue;
+}
+.boxmain{
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 320px;
+}
+.main{
+	
+}
+.main h1{
+	font-size: 1.8rem;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+.sidebar{
+	background: salmon;
+}
+.footer{
+	background: red;
+	height: 80px;
+}
