@@ -22,8 +22,7 @@ body{
 	align-items: center;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	border-radius: 10px;
-	border: 1px solid #000;
+	border-bottom: 5px dashed #000;
 }
 .header .logo{
 	max-width: 300px;
@@ -74,6 +73,10 @@ body{
 	margin-top: 15px;
 	margin-bottom: 10px;
 }
+.main p{
+	font-size: 18px;
+	line-height: 35px;
+}
 .main-content{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -82,33 +85,108 @@ body{
 }
 .card-info{
 	overflow: hidden;
-	/* padding: 10px; */
+	max-height: 180px;
+	border-radius: 10px;
+	min-height: 180px;
+	padding: 7px;
+	border: 2px dashed #000;
 }
 .card-info a{
 	display: flex;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	min-height: 180px;
+	max-height: 180px;
 }
 .card-info .card-img{
-	position: relative;
+	overflow: hidden;
 }
 .card-info .card-img img{
 	width: 100%;
 	height: 100%;
-	border-radius: 10px;
+	min-height: 180px;
+	transition: all 0.9s ease;
 }
 .card-info .card-img h2{
 	position: absolute;
-	bottom: 0;
+	top: 105px;
 	left: 0px;
 	color: #fff;
 	background: rgba(0, 0, 0, 0.5);
 	font-size: 18px;
 	padding: 5px;
+	height: 38px;
+	overflow: hidden;
+	transition: all 0.5s ease;
 }
-
+.card-info a:hover img{
+	opacity: 0.7;
+}
+.card-info a:hover h2{
+	background: rgba(0, 0, 0, 0.8);
+}
 .sidebar{
-	background: salmon;
+	background: rgba(154, 149, 167, 0.5);
+	border-radius: 10px;
+	padding: 10px;
+}
+.sidebar h3{
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+	text-decoration: underline;
+}
+.sidebar ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.sidebar ul li{
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.sidebar a{
+	text-decoration: none;
+	display: flex;
+	padding: 2px;
+}
+.sidebar a img{
+	border-radius: 4px;
+}
+.wpp-post-title{
+	justify-content: center;
+	align-items: start;
+	font-size: 20px;
+	overflow: hidden;
+	height: 50px;
+}
+.sidebar .cat-item{
+	font-size: 18px;
+	margin-top: 4px;
+	display: flex;
+}
+.sidebar .cat-item a{
+	display: flex;
 }
 .footer{
-	background: red;
-	height: 80px;
+	margin-top: 20px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s ease;
+	border-top: 5px dashed #000;
+
+
+}
+.footer a{
+	text-decoration: none;
+	color: #000;
+	margin-right: 15px;
+}
+.footer a:hover{
+	color: #fff;
 }
